@@ -23,8 +23,8 @@ for i in range(4):
 
 print(f"Waiting for y axe input... (Press 'a')") 
 keyboard.wait('a')
-y = pyautogui.position()[0]
-print(f"Input {i + 1} received!")
+y = pyautogui.position()[1]
+print(f"Input y received!")
 os.system('cls')
 
 x1 = lines[0]
@@ -36,6 +36,8 @@ print('System Generated.')
 print('Press ENTER to continue.')
 keyboard.wait('enter')
 os.system('cls')
+
+print(y)
 
 while keyboard.is_pressed('q') == False:
     
